@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
     signInWithEmailAndPassword,
     onAuthStateChanged
 } from "firebase/auth";
 import { auth } from "./FirebaseConfig.js";
-import { Navigate } from "react-router-dom";
+import { Navigate, Link } from "react-router-dom";
 
 const Login = () => {
     /* ↓state変数を定義 */
@@ -36,6 +36,10 @@ const Login = () => {
     
     return(
         <>
+          {user ? (
+            <Navigate to={`/`} />
+          ) : (
+        <>
          <h1>ログインページ</h1>
          <form>
             <div>
@@ -60,6 +64,8 @@ const Login = () => {
             <p>新規登録は<Link to={`/register/`}>こちら</Link></p>
          </form>
         </>
+      )}
+    </>
     );
 };
 
