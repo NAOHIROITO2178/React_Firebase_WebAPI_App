@@ -41,7 +41,7 @@ const Login = () => {
           ) : (
         <>
          <h1>ログインページ</h1>
-         <form>
+         <form onSubmit={handleSubmit}>
             <div>
                 <label>メールアドレス</label>
                 <input
