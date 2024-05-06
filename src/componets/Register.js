@@ -38,7 +38,7 @@ const Register = () => {
     return (
       <>
        {user ? (
-        <Navigate to={`/`} />
+        <Navigate to={`/mypage/`} />
       ) : (
         <>
        <h1>新規登録</h1>

@@ -37,7 +37,7 @@ const Login = () => {
     return(
         <>
           {user ? (
-            <Navigate to={`/`} />
+            <Navigate to={`/mypage/`} />
           ) : (
         <>
          <h1>ログインページ</h1>
