@@ -36,7 +36,6 @@ const Mypage = () => {
                ) : (
                   <>
                      <h1>マイページ</h1>
-                     <p>{user?.email}</p>
                      <button onClick={logout}>ログアウト</button>
                      <NasaData /> 
                   </>
