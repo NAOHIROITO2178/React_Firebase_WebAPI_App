@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Register from "./componets/Register";
-import Login from "./componets/Login";
-import Mypage from "./componets/Mypage";
+import Register from "./components/Register";
+import Login from "./components/Login";
+import Mypage from "./components/Mypage";
+import NasaData from "./components/NasaData";  // インポート
+
 
 const App = () => {
   return (
@@ -12,6 +14,7 @@ const App = () => {
          <Route path={`/register/`} element={<Register />}/>
          <Route path={`/login/`} element={<Login />}/>
          <Route path={`/mypage/`} element={<Mypage />}/>
+         <Route path={`/nasa/`} element={<NasaData />} /> 
        </Routes>
       </BrowserRouter>
     </div>
