@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Register from "./components/Register";
-import Login from "./components/Login";
-import Mypage from "./components/Mypage";
-import NasaData from "./components/NasaData";  // インポート
+import Register from "./components/Register.tsx";
+import Login from "./components/Login.tsx";
+import Mypage from "./components/Mypage.tsx";
+import NasaData from "./components/NasaData.tsx";  // インポート
 
 
 const App = () => {
